@@ -1,13 +1,13 @@
 @echo off
 powershell (new-object System.Net.WebClient).DownloadFile( 'https://github.com/iTXTech/mcl-installer/releases/download/2827601/mcl-installer-2827601-windows-amd64.exe','mcl-installer.exe')
 del input.txt
-REM °²×° Java
+REM å®‰è£… Java
 echo Y >> input.txt
-REM Ê¹ÓÃ Java 11
+REM ä½¿ç”¨ Java 11
 echo 11 >> input.txt
-REM Ê¹ÓÃ JRE
+REM ä½¿ç”¨ JRE
 echo 1 >> input.txt
-REM Ê¹ÓÃ 32 Î» JRE µÄ¼æÈİËùÓĞÏµÍ³, Ò²·½±ãÈç¹ûÒªÓÃ mirai-native
+REM ä½¿ç”¨ 32 ä½ JRE çš„å…¼å®¹æ‰€æœ‰ç³»ç»Ÿ, ä¹Ÿæ–¹ä¾¿å¦‚æœè¦ç”¨ mirai-native
 echo x32 >> input.txt
 echo Y >> input.txt
 echo Y >> input.txt
@@ -21,6 +21,6 @@ del mcl-installer.exe
 cmd /c mcl.cmd --update-package net.mamoe:mirai-api-http --channel stable --type plugin
 echo
 echo
-echo °²×°³É¹¦, ÒÔºóÖ´ĞĞ mcl.cmd ¼´¿ÉÆô¶¯ Mirai Console
+echo å®‰è£…æˆåŠŸ, ä»¥åæ‰§è¡Œ mcl.cmd å³å¯å¯åŠ¨ Mirai Console
 echo Installation succeed. Run mcl.cmd to start Mirai Console.
 pause
